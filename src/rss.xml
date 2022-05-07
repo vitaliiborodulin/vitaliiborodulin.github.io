@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Переводы свежих статей на тему вебразработки</title>
+        <link>http://xaaser2006.ru</link>
+        <description>Последние переводы свежих статей на тему вебразработки с сайта xaaser2006.ru</description>
+        <language>ru</language>
+        <atom:link href="http://xaaser2006.ru/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Mon, 17 Dec 2019 00:00:00 GMT</pubDate>
+
+        <lastBuildDate>Thu, 24 September 2020 00:01:00 GMT</lastBuildDate>
+
+
+        <item>
+            <title>Почему псевдоэлементы ::before и ::after не работают для полей ввода и картинок</title>
+            <link>http://xaaser2006.ru/2020-09-24-pochemu-psevdoelementy-before-i-after-ne-rabotayut-dlya-polej-vvoda-i-kartinok.html</link>
+            <pubDate>Thu, 24 September 2020 00:01:00 GMT</pubDate>
+            <description>
+                Автор: Chris Coyier.
+                &lt;br /&gt;
+                Перевел статью: Дмитрий Гордиенко.
+                &lt;br /&gt;
+                Публикация перевода: 24 Сентября 2020.
+                &lt;br /&gt;
+                &lt;br /&gt;
+                &lt;img src=&quot;http://xaaser2006.ru/assets/img/articles/2020-09-24/top-img.jpg&quot;&gt;
+                &lt;br /&gt;
+                &lt;br /&gt;
+                Описание: Попробуем разобраться почему псевдоэлементы ::before и ::after нельзя добавить к таким элементам как input, img, iframe и еще ряду элементов и в чем отличие этих элементов от остальных.
+            </description>
+            <guid isPermaLink="true">http://xaaser2006.ru/2020-09-24-pochemu-psevdoelementy-before-i-after-ne-rabotayut-dlya-polej-vvoda-i-kartinok.html</guid>
+        </item>
+
+    </channel>
+</rss>

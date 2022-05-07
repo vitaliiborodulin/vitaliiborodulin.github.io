@@ -1,0 +1,179 @@
+extends ../_template
+
+block variables
+  - var title       = 'My CV | Xaaser2006.ru'
+  - var description = 'My CV | Xaaser2006.ru'
+  - var ogtitle     = 'My CV | Xaaser2006.ru'
+  - var ogimage     = 'assets/img/social.jpg'
+
+block content
+  .main-wrap#main-wrap
+    include ../sections/aside
+
+    //begin content
+    section.main.cv-page
+      include ../elements/burger
+      include ../elements/scroll-2-top
+
+      //begin page-header
+      .page-header
+        .container
+          .page-header__title
+            h1.page-header__title.page-title My CV
+      //end page-header
+
+      .cv
+        .container
+          //begin cv__left
+          .cv__left
+            .cv__ava
+              img(src="assets/img/ava.jpg" alt="Vitalii Borodulin")
+            .cv__info.cv-info
+              .cv-info__row
+                span.cv-info__title Name
+                span.cv-info__descr Vitalii Borodulin
+              .cv-info__row
+                span.cv-info__title Position
+                span.cv-info__descr web developer
+              .cv-info__row
+                span.cv-info__title Employment
+                span.cv-info__descr full time, part time, freelance
+              .cv-info__row
+                span.cv-info__title Location
+                span.cv-info__descr Belgorod, Russia
+              .cv-info__row
+                span.cv-info__title Date of birth
+                span.cv-info__descr 01-03-1984
+              .cv-info__row
+                span.cv-info__title Experience
+                span.cv-info__descr freelance from 2017
+              .cv-info__row
+                span.cv-info__title Email
+                span.cv-info__descr
+                  a(href="mailto:xaaser2006@gmail.com") xaaser2006@gmail.com
+              .cv-info__row
+                span.cv-info__title Website
+                span.cv-info__descr
+                  a(href="http://xaaser2006.ru/" target="_blank") http://xaaser2006.ru
+              .cv-info__row.cv-info__row--socials
+                a(href="https://t.me/vitaliiborodulin" target="_blank" rel="nofollow noopener noreferrer" title="telegram").cv-info__link
+                  +svg('telegram')
+                a(href="whatsapp://send?phone=79202069572" target="_blank" rel="nofollow noopener noreferrer" title="whatsapp").cv-info__link
+                  +svg('whatsapp')
+                a(href="https://github.com/vitaliiborodulin" target="_blank" rel="nofollow noopener noreferrer" title="github").cv-info__link
+                  +svg('git')
+              .cv-info__row
+                a(href="assets/text/web_developer_Vitalii_Borodulin.pdf" target='_blank').btn.btn--dark Download CV
+          //end cv__left
+
+          //begin cv__right
+          .cv__right
+            //begin ABOUT
+            h2.cv__title Vitalii Borodulin
+            .cv__descr
+              p I develop and optimize layouts for adaptive sites, also maintain existing projects. I always make sure to check the results of my work for cross-browser compatibility, download speed and validity.
+              p
+                |My list of completed projects includes 30+ sites performed at various levels of complexity. More information about some of them is available in
+                =' '
+                a(href="works.html") Works section
+                =' '
+                |and on my
+                =' '
+                a(href="https://github.com/vitaliiborodulin" target="_blank" rel="nofollow noopener noreferrer") Github page.
+            h2.cv__title Open for Web Developer Position
+            .cv__descr
+              p
+                i I consider both full time and part time office employment (Moscow, Russia), remote cooperation is also possible.
+            //end ABOUT
+
+            //begin SKILLS
+            h2.cv__title Skills
+            .cv__descr
+              ul.cv__list
+                li
+                  strong HTML5
+                li
+                  strong Css3
+                  =' '
+                  | with
+                  =' '
+                  strong Scss, Less
+                li
+                  strong JS
+                  =' '
+                  |(native & Jquery)
+                li
+                  strong PHP
+                  =' '
+                  |(Wordpress, Modx)
+            //end SKILLS
+
+            //begin TOOLS
+            h2.cv__title Tools that I use
+            .cv__descr
+              ul.cv__list
+                li
+                  strong Gulp
+                  =' '
+                  |and
+                  =' '
+                  strong Webpack
+                li
+                  strong Git
+                  =' '
+                  |and
+                  =' '
+                  strong Github
+                li
+                  strong Figma, Avocode, Adobe Photoshop, Adobe Illustrator
+            //end TOOLS
+
+            //begin LANGUAGES
+            h2.cv__title Languages
+            .cv__descr
+              ul.cv__list
+                li
+                  strong Russian
+                  =' '
+                  |(native)
+                li
+                  strong English
+                  =' '
+                  a(href="assets/img/certificates/english.pdf" target='_blank') Pre-Intermediate
+            //end LANGUAGES
+
+            //begin EDUCATION
+            h2.cv__title Education
+            p
+              strong 2001
+              =' '
+              |- PC User (Hibinsky Technical College)
+            p
+              strong 2006
+              =' '
+              |- Engineer (Petrozavodsk State University)
+            p
+              strong 2017
+              =' '
+              |- HTMLAcademy (Professional HTML and CSS)
+            p
+              strong 2018
+              =' '
+              |- Lavrik (Wordpress Developer)
+            p
+              strong 2019
+              =' '
+              |- Lavrik (Smartgrid2 – advanced layout)
+            p
+              strong 2020
+              =' '
+              |- Lavrik (JavaScript for web-developers)
+            p
+              strong 2021
+              =' '
+              |- Geekbrains -
+              =' '
+              a(href="assets/img/certificates/2021-python.pdf" target='_blank') Fundamentals of python
+            //end EDUCATION
+          //end cv__right
+    //end content

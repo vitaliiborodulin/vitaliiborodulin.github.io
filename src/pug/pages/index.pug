@@ -1,0 +1,23 @@
+extends ../_template
+
+block variables
+  - var title       = 'Xaaser2006.ru'
+  - var description = 'Xaaser2006.ru'
+  - var ogtitle     = 'Xaaser2006.ru'
+  - var ogimage     = 'assets/img/social.jpg'
+
+block content
+  .main-wrap#main-wrap
+    include ../sections/aside
+
+    //begin content
+    section.main.index
+      include ../elements/burger
+      include ../elements/scroll-2-top
+
+      .index__block
+        h1.index__title Vitalii Borodulin
+        h2.index__subtitle web-developer
+        .index__btn
+          a(href="assets/text/web_developer_Vitalii_Borodulin.pdf" target='_blank').btn.btn--light Download CV
+    //end content

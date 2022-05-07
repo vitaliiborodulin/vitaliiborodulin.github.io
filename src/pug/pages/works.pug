@@ -1,0 +1,48 @@
+extends ../_template
+
+block variables
+  - var title       = 'Last works | Xaaser2006.ru'
+  - var description = 'Last works | Xaaser2006.ru'
+  - var ogtitle     = 'Last works | Xaaser2006.ru'
+  - var ogimage     = 'assets/img/social.jpg'
+
+block content
+  .main-wrap#main-wrap
+    include ../sections/aside
+
+    //begin content
+    section.main.works
+      include ../elements/burger
+      include ../elements/scroll-2-top
+
+      //begin page-header
+      .page-header
+        .container
+          .page-header__title
+            h1.page-header__title.page-title My last works
+      //end page-header
+
+      .container
+        //begin works__gallery
+        .works__gallery
+          include ../elements/works/sm
+          include ../elements/works/tehnokrat
+          include ../elements/works/goldypole
+          include ../elements/works/intmemo
+          include ../elements/works/museum
+          include ../elements/works/zmind
+          include ../elements/works/conews
+          include ../elements/works/bodyclick
+          include ../elements/works/circusrio
+          include ../elements/works/mann
+          include ../elements/works/fagot
+          include ../elements/works/premium
+          include ../elements/works/nowafit
+          include ../elements/works/parfino
+          include ../elements/works/alferov
+          include ../elements/works/digitacrea
+          include ../elements/works/mg
+          include ../elements/works/zvk
+          include ../elements/works/chemodan
+        //end works__gallery
+    //end content
