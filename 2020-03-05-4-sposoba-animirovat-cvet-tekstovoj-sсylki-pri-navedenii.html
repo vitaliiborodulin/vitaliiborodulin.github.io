@@ -1,0 +1,302 @@
+<!--===== svg icon =====-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>4 способа анимировать цвет текстовой ссылки при наведении</title>
+    <meta name="description" content="4 способа анимировать цвет текстовой ссылки при наведении">
+    <meta name="author" content="http://xaaser2006.ru/">
+    <!-- begin responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- end responsive-->
+    <!-- begin social content&image-->
+    <meta property="og:title" content="4 способа анимировать цвет текстовой ссылки при наведении">
+    <meta property="og:image" content="assets/img/articles/2020-03-05/top-img.jpg">
+    <meta property="og:image:width" content="750">
+    <meta property="og:image:height" content="500">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- end social content&image-->
+    <!-- begin favicon block start-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon/favicon.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.jpg">
+    <!-- end favicon block end-->
+    <!--begin fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7COswald%7CRoboto+Condensed:300,400,700%7CTeko&amp;display=swap&amp;subset=cyrillic-ext" rel="stylesheet">
+    <!--end fonts-->
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- begin custom browsers color-->
+    <meta name="theme-color" content="#0b0b0b">
+    <!-- end custom browsers color-->
+    <!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="main-wrap" id="main-wrap">
+      <!-- begin aside-->
+      <aside class="aside" id="aside">
+        <!--begin menu-->
+        <nav class="aside__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--home"><a class="menu__link" href="/">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#home"></use>
+                </svg><span class="menu__text">home</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="cv.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#resume"></use>
+                </svg><span class="menu__text">cv</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="works.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#works"></use>
+                </svg><span class="menu__text">works</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="blog.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#blog"></use>
+                </svg><span class="menu__text">blog</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="contacts.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#contacts"></use>
+                </svg><span class="menu__text">contacts</span></a></li>
+          </ul>
+        </nav>
+        <!--end menu-->
+      </aside>
+      <!-- end aside-->
+      <!--begin content-->
+      <div class="main article-page">
+        <!--begin burger-->
+        <div class="burger" id="burger">
+          <div class="burger__line burger__line--top"></div>
+          <div class="burger__line burger__line--middle-01"></div>
+          <div class="burger__line burger__line--middle-02"></div>
+          <div class="burger__line burger__line--bottom"></div>
+        </div>
+        <!--end burger-->
+        <!--begin scroll-2-top--><a class="scroll-2-top scroll-2-anchor" href="#main-wrap" id="scroll-2-top">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#scroll-2-top"></use>
+          </svg></a>
+        <!--end scroll-2-top-->
+        <div class="container">
+          <article class="article">
+            <!--begin article__header-->
+            <header class="article__header">
+              <div class="article__top-img"><img src="assets/img/articles/2020-03-05/top-img.jpg" alt="Link hover"></div>
+              <div class="article__info">
+                <h1 class="article__title">4 способа анимировать цвет текстовой ссылки при наведении</h1>
+                <div class="article__date">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#calendar"></use>
+                  </svg>
+                  <time datetime="2020-03-05">2020-03-05</time>
+                </div>
+                <!--begin article__origin-->
+                <div class="article__origin"><span class="article__origin-text">Перевод статьи:</span><a class="article__origin-article" href="https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover" target="_blank" rel="nofollow noopener noreferrer">4 Ways to Animate the Color of a Text Link on Hover</a></div>
+                <div class="article__origin" title="The author of the article"><span class="article__origin-text">Автор:</span><span class="article__origin-author">Katherine Kato</span></div>
+                <!--end article__origin-->
+                <!--begin article__tags-->
+                <div class="article__tags"><span class="article__tag">css</span><span class="article__tag">animation</span></div>
+                <!--end article__tags-->
+              </div>
+            </header>
+            <!--end article__header-->
+            <!--begin article__body-->
+            <div class="article__body article-body">
+              <p>Давайте создадим эффект на чистом Css, который будет менять цвет текстовой ссылки при наведении ... но будем заполнять ссылку цветом слева направо, а не как обычно просто изменять цвет.</p>
+              <div class="article-body__img article-body__img--center"><img src="assets/img/articles/2020-03-05/gif-01.gif" alt="example" style="width: auto;"></div>
+              <p>Мы можем сделать это четырьмя различными способами. Давайте разберем их, но не будем забывать о таких важных вещах как доступность, производительность и поддержка браузерами.</p>
+              <p>Приступим!</p>
+              <h2 class="article-body__subtitle">#Вариант 1: Использование background-clip: text</h2>
+              <p><i> На момент написания статьи свойство <a href="https://caniuse.com/#feat=mdn-css_properties_background-clip_text" target="_blank" rel="nofollow noopener noreferrer">background-clip: text</a> является экспериментальной функцией и не поддерживается в Internet Explorer 11 и ниже.</i></p>
+              <p>В этом подходе используется сочетание <a href="https://css-tricks.com/how-to-do-knockout-text" target="_blank" rel="nofollow noopener noreferrer">вырезанного текста</a> и <a href="https://css-tricks.com/snippets/css/css-linear-gradient/#article-header-id-4" target="_blank" rel="nofollow noopener noreferrer"> градиента с резкими границами перехода цвета</a>. Разметка состоит из одного единственного элемента - HTML-ссылки:</p>
+              <pre><code class="language-html">&lt;a href="#">Link Hover&lt;/a>
+</code></pre>
+              <p>Добавляем стили к нашей ссылке. Использование <i class='highlight-text'>overflow: hidden</i> обрезает любой контент вне гиперссылки во время анимации происходящей при наведении:</p>
+              <pre><code class="language-css">a {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 800;
+    color: royalblue;
+    overflow: hidden;
+}
+</code></pre>
+              <p>Нам нужно будет использовать линейный градиент с резким переходом на пятидесяти процентах от начального цвета ссылки к цвету которым ссылка закрасится при наведении на неё:</p>
+              <pre><code class="language-css">a {
+    /* Same as before */
+    background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+}
+</code></pre>
+              <p>Используем <i class='highlight-text'>background-clip</i> чтобы обрезать градиент и текст который мы будем отображать. Также, мы будем использовать свойства <i class='highlight-text'>background-size</i> и <i class='highlight-text'>background-position</i> для отображения первоначального цвета:</p>
+              <pre><code class="language-css">a {
+    /* Same as before */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+}
+</code></pre>
+              <p>Наконец, давайте добавим CSS свойство <i class='highlight-text'>transition</i> и псевдокласс <i class='highlight-text'>::hover</i> к ссылке. Чтобы ссылка заполнялась слева направо при наведении, используйте свойство <i class='highlight-text'>background-position</i>:</p>
+              <pre><code class="language-css">a {
+    /* Same as before */
+    transition: background-position 275ms ease;
+}
+a:hover {
+    background-position: 0 100%;
+}</code></pre>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/Odinokun/embed/KKpXMpL?height=250&amp;amp;default-tab=result&amp;amp;embed-version=2" height="250" style="width: 100%;"></iframe>
+              </div>
+              <p>Несмотря на то, что этот метод обеспечивает необходимый эффект при наведении, Safari и Chrome будут <a href="https://webkit.org/blog/164/background-clip-text" target="_blank" rel="nofollow noopener noreferrer">обрезать текстовые декорации и тени</a>, то есть они не будут отображаться. Применение стилей текста, таких как подчеркивание, не будет работать со свойством <i class='highlight-text'>text-decor</i>. Возможно, следует рассмотреть <a href="https://css-tricks.com/styling-underlines-web" target="_blank" rel="nofollow noopener noreferrer">другие подходы для создания подчеркиваний</a>.</p>
+              <h2 class="article-body__subtitle">#Вариант 2: Использование ширины/высоты</h2>
+              <p>Этот вариант работает с использованием <a href="https://css-tricks.com/a-complete-guide-to-data-attributes" target="_blank" rel="nofollow noopener noreferrer">дата-атрибута</a>, который содержит тот же текст, что и в теге <i class='highlight-text'>a</i>. <br>А также изменения ширины (заполнение текста слева направо или справа налево) или высоты (заполнение текста сверху вниз или снизу вверх) псевдоэлемента, от 0% до 100% при наведении. <br> Вот разметка:</p>
+              <pre><code class="language-html">&lt;a href="#" data-content="Link Hover">Link Hover&lt;/a>
+</code></pre>
+              <p>Стили похожи на те, которые мы применяли в предыдущем варианте, но без свойств для фона. В этом варианте свойство <i class='highlight-text'>text-decoration</i> будет работать:</p>
+              <pre><code class="language-css">a {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    color: royalblue;
+    font-weight: 800;
+    text-decoration: underline;
+    overflow: hidden;
+}
+</code></pre>
+              <p>Мы используем небольшой трюк для копирования текста в дата-атрибуте и отображения его с помощью функции <i class='highlight-text'>attr()</i> в свойстве <i class='highlight-text'>content</i>, которое применяется к псевдоэлементу <i class='highlight-text'>::before</i>. Расположим наш псевдоэлемент над текстом в ссылке.</p>
+              <pre><code class="language-css">a::before {
+    position: absolute;
+    content: attr(data-content);
+    /* Prints the value of the attribute */
+    top: 0;
+    left: 0;
+    color: midnightblue;
+    text-decoration: underline;
+    overflow: hidden;
+    transition: width 275ms ease;
+}
+</code></pre>
+              <p>Чтобы текст не переносился на следующую строку, применим свойство <i class='highlight-text'>white-space: nowrap</i>. Чтобы изменить цвет ссылки при наведении, задайте для псевдоэлемента <i class='highlight-text'>::before</i> необходимый цвет и значение <i class='highlight-text'>width</i> равное 0:</p>
+              <pre><code class="language-css">a::before {
+    /* Same as before */
+    width: 0;
+    white-space: nowrap;
+}
+</code></pre>
+              <p>При наведении увеличьте ширину для <i class='highlight-text'>::before</i> до 100%:</p>
+              <pre><code class="language-css">a:hover::before {
+    width: 100%;
+}</code></pre>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/Odinokun/embed/gOpGMmd?height=250&amp;amp;default-tab=result&amp;amp;embed-version=2" height="250" style="width: 100%;"></iframe>
+              </div>
+              <p>Несмотря на то, что этот подход работает, использование свойств <i class='highlight-text'>width</i> или <i class='highlight-text'>height</i> <a href="https://csstriggers.com/width" target="_blank" rel="nofollow noopener noreferrer">не лучший способ</a> для анимации. Лучше всего использовать свойства <i class='highlight-text'>transform</i> или <i class='highlight-text'>opacity</i> чтобы добиться плавного перехода со скоростью 60 кадров в секунду.</p>
+              <p>Если при этом использовать свойство <i class='highlight-text'>text-decoration</i> с различными значениями, то можно создать различные варианты подчеркивания при наведении. Я сделал демо, на котором показал различные варианты подчеркивания, используя CSS-свойство <a href="https://css-tricks.com/almanac/properties/c/clip-path" target="_blank" rel="nofollow noopener noreferrer">clip-path</a>.</p>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/Odinokun/embed/ExjwyXN?height=250&amp;amp;default-tab=result&amp;amp;embed-version=2" height="250" style="width: 100%;"></iframe>
+              </div>
+              <h2 class="article-body__subtitle">#Вариант 3: Использование clip-path</h2>
+              <p>Как вы уже наверное догадались, в этом варианте, мы будем использовать CSS-свойство <i class='highlight-text'>clip-path</i> с многоугольной формой. У многоугольника будет четыре вершины, две из которых будут расширяться вправо при наведении:</p>
+              <div class="article-body__img article-body__img--center"><img src="assets/img/articles/2020-03-05/gif-02.gif" alt="example" style="width: auto;"></div>
+              <p>Разметка такая же, как и в предыдущем методе. Мы снова будем использовать псевдоэлемент <i class='highlight-text'>::before</i>, но CSS будет другим:</p>
+              <pre><code class="language-css">a::before {
+    position: absolute;
+    content: attr(data-content);
+    color: midnightblue;
+    text-decoration: underline;
+    clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+    transition: clip-path 275ms ease;
+}
+</code></pre>
+              <p>В отличие от предыдущих методов, <i class='highlight-text'>text-decoration: underline</i> должно быть назначено для псевдоэлемента <i class='highlight-text'>::before</i>, чтобы цвет заполнял подчеркивание при наведении курсора.</p>
+              <p>Теперь давайте рассмотрим CSS для свойства <i class='highlight-text'>clip-path</i>:</p>
+              <pre><code class="language-css">clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+</code></pre>
+              <p>Вершины многоугольника заданного при помощи <i class='highlight-text'>clip-path</i> установлены в процентах, и определяют координаты в следующем порядке:</p>
+              <ul>
+                <li>0 0 = верхний левый</li>
+                <li>0 0 = вверху справа</li>
+                <li>100% 0 = справа внизу</li>
+                <li>0 100% = внизу слева</li>
+              </ul>
+              <p>Направление эффекта заполнения можно изменить, изменив координаты.</p>
+              <p>Теперь, когда мы знаем, как задаются координаты, мы можем заставить многоугольник расширяться вправо при наведении:</p>
+              <pre><code class="language-css">a:hover::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}</code></pre>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/Odinokun/embed/mdJBEqj?height=250&amp;amp;default-tab=result&amp;amp;embed-version=2" height="250" style="width: 100%;"></iframe>
+              </div>
+              <p>Этот вариант стилизации работает довольно хорошо, но обратите внимание, что поддержка свойства <i class='highlight-text'>clip-path</i> в некоторых браузерах <a href="https://caniuse.com/#feat=css-clip-path" target="_blank" rel="nofollow noopener noreferrer">далека от совершенства</a>.</p>
+              <h2 class="article-body__subtitle">#Вариант 4: Использование трансформации</h2>
+              <p>В этот раз, разметка будет отличаться от предыдущих вариантов. Мы будем использовать внутри нашей ссылки элемент <i class='highlight-text'>span</i>. Поскольку мы будем использовать дублированный контент в отдельном элементе, мы будем использовать <i class='highlight-text'>aria-hidden="true"</i> для <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-hidden_attribute" target="_blank" rel="nofollow noopener noreferrer">улучшения доступности</a> - это скроет его от скринридеров, чтобы контент не читался дважды:</p>
+              <pre><code class="language-css">&lt;a href="#">
+    &lt;span data-content="Link Hover" aria-hidden="true">&lt;/span>
+    Link Hover
+&lt;/a>
+</code></pre>
+              <p>CSS для элемента <i class='highlight-text'>span</i> содержит трансформацию, которая будет начинаться слева:</p>
+              <pre><code class="language-css">span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: transform 275ms ease;
+}
+</code></pre>
+              <p>Далее нам нужно заставить <i class='highlight-text'>span</i> скользить вправо так:</p>
+              <div class="article-body__img article-body__img--center"><img src="assets/img/articles/2020-03-05/gif-03.gif" alt="example" style="width: auto;"></div>
+              <p>Для этого мы будем использовать CSS-функцию <i class='highlight-text'>translateX()</i> для которой установим значение 0:</p>
+              <pre><code class="language-css">a:hover span {
+    transform: translateX(0);
+}
+</code></pre>
+              <p>Затем мы будем использовать псевдоэлемент <i class='highlight-text'>::before</i> для <i class='highlight-text'>span</i>, снова используя атрибут <i class='highlight-text'>data-content</i>, как мы делали это раньше. И установим позицию, переместив ее на 100% вдоль оси X.</p>
+              <pre><code class="language-css">span::before {
+    display: inline-block;
+    content: attr(data-content);
+    color: midnightblue;
+    transform: translateX(100%);
+    transition: transform 275ms ease;
+    text-decoration: underline;
+}
+</code></pre>
+              <p>Как и для элемента <i class='highlight-text'>span</i>, положение <i class='highlight-text'>::before</i> также будет установлено в <i class='highlight-text'>translateX(0)</i>:</p>
+              <pre><code class="language-css">a:hover span::before {
+    transform: translateX(0);
+}</code></pre>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/Odinokun/embed/qBdPNKV?height=250&amp;amp;default-tab=result&amp;amp;embed-version=2" height="250" style="width: 100%;"></iframe>
+              </div>
+              <P>Несмотря на то, что этот метод является наиболее кроссбраузерным, для его реализации требуется больше разметки и CSS, что не очень хорошо. Тем не менее, использование CSS-свойства <i class='highlight-text'>transform</i> очень полезно для производительности, поскольку не вызывает перерисовок и, следовательно, обеспечивает плавные переходы CSS со скоростью 60 кадров в секунду.</P>
+              <h2 class="article-body__subtitle">#Мы сделали это!</h2>
+              <p>Только что, мы рассмотрели четыре различных метода для достижения одинакового эффекта при наведении. Хотя у каждого есть свои плюсы и минусы, как вы видите, вполне реально плавно изменить цвет текста с эффектом постепенного закрашивания. Этот аккуратный и небольшой эффект сделает ваши ссылки более интерактивными.</p>
+            </div>
+            <!--end article__body-->
+            <!--begin article__footer-->
+            <footer class="article__footer article-footer">
+              <h3 class="article-footer__title">Больше статей тут</h3>
+              <div class="article-footer__links"><a class="article-footer__link article-footer__link--xaaser" href="blog.html">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#blog"></use>
+                  </svg></a><a class="article-footer__link article-footer__link--telegram" href="https://t.me/vitaliiborodulin" target="_blank" rel="nofollow noopener noreferrer">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#telegram"></use>
+                  </svg></a><a class="article-footer__link article-footer__link--rss" href="http://xaaser2006.ru/rss.xml" target="_blank" rel="nofollow noopener noreferrer">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#rss"></use>
+                  </svg></a></div>
+            </footer>
+            <!--end article__footer-->
+          </article>
+        </div>
+      </div>
+      <!--end content-->
+    </div>
+    <script src="assets/js/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

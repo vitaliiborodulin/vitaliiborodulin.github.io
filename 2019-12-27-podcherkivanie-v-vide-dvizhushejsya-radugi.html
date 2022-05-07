@@ -1,0 +1,158 @@
+<!--===== svg icon =====-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Подчеркивание в виде движущейся радуги | odinokun.com</title>
+    <meta name="description" content="Подчеркивание в виде движущейся радуги | odinokun.com">
+    <meta name="author" content="http://xaaser2006.ru/">
+    <!-- begin responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- end responsive-->
+    <!-- begin social content&image-->
+    <meta property="og:title" content="Подчеркивание в виде движущейся радуги | odinokun.com">
+    <meta property="og:image" content="assets/img/articles/2019-12-27/rainbow.jpg">
+    <meta property="og:image:width" content="750">
+    <meta property="og:image:height" content="500">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- end social content&image-->
+    <!-- begin favicon block start-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon/favicon.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.jpg">
+    <!-- end favicon block end-->
+    <!--begin fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7COswald%7CRoboto+Condensed:300,400,700%7CTeko&amp;display=swap&amp;subset=cyrillic-ext" rel="stylesheet">
+    <!--end fonts-->
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- begin custom browsers color-->
+    <meta name="theme-color" content="#0b0b0b">
+    <!-- end custom browsers color-->
+    <!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="main-wrap" id="main-wrap">
+      <!-- begin aside-->
+      <aside class="aside" id="aside">
+        <!--begin menu-->
+        <nav class="aside__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--home"><a class="menu__link" href="/">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#home"></use>
+                </svg><span class="menu__text">home</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="cv.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#resume"></use>
+                </svg><span class="menu__text">cv</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="works.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#works"></use>
+                </svg><span class="menu__text">works</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="blog.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#blog"></use>
+                </svg><span class="menu__text">blog</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="contacts.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#contacts"></use>
+                </svg><span class="menu__text">contacts</span></a></li>
+          </ul>
+        </nav>
+        <!--end menu-->
+      </aside>
+      <!-- end aside-->
+      <!--begin content-->
+      <div class="main article-page">
+        <!--begin burger-->
+        <div class="burger" id="burger">
+          <div class="burger__line burger__line--top"></div>
+          <div class="burger__line burger__line--middle-01"></div>
+          <div class="burger__line burger__line--middle-02"></div>
+          <div class="burger__line burger__line--bottom"></div>
+        </div>
+        <!--end burger-->
+        <!--begin scroll-2-top--><a class="scroll-2-top scroll-2-anchor" href="#main-wrap" id="scroll-2-top">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#scroll-2-top"></use>
+          </svg></a>
+        <!--end scroll-2-top-->
+        <div class="container">
+          <article class="article">
+            <!--begin article__header-->
+            <header class="article__header">
+              <div class="article__top-img"><img src="assets/img/articles/2019-12-27/rainbow.svg" alt="Rainbow"></div>
+              <div class="article__info">
+                <h1 class="article__title">Подчеркивание в виде движущейся радуги</h1>
+                <div class="article__date" title="Date of publication of the original article">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#calendar"></use>
+                  </svg>
+                  <time datetime="2019-12-23">2019-12-23</time>
+                </div>
+                <!--begin article__origin-->
+                <div class="article__origin"><span class="article__origin-text">Перевод статьи:</span><a class="article__origin-article" href="https://css-tricks.com/moving-rainbow-underlines" target="_blank" rel="nofollow noopener noreferrer">Moving Rainbow Underlines</a></div>
+                <div class="article__origin" title="The author of the article"><span class="article__origin-text">Автор:</span><span class="article__origin-author">Chris Coyier</span></div>
+                <!--end article__origin-->
+                <!--begin article__tags-->
+                <div class="article__tags"><span class="article__tag">css</span><span class="article__tag">animation</span></div>
+                <!--end article__tags-->
+              </div>
+            </header>
+            <!--end article__header-->
+            <!--begin article__body-->
+            <div class="article__body article-body">
+              <p>Мне очень нравится дизайн сайта <a href='https://sandwich.co/' target="_blank" rel="nofollow noopener noreferrer">Sandwich</a>. Среди множества красивых эффектов, у них есть заголовки с подчеркиванием в виде радуги, которая <strong>сдвигается при прокрутке</strong>. И этот небольшой эффект вычисляется не по скроллу, а его движение зависит от положения прокрутки.</p>
+              <div class="article-body__img"><img src="assets/img/articles/2019-12-27/rainbow-demo.gif" alt="Rainbow demo"></div>
+              <p>Для того, чтобы нарисовать радугу, мы могли бы использовать <a href='https://css-tricks.com/snippets/css/css-linear-gradient/' target="_blank" rel="nofollow noopener noreferrer">линейный градиент</a>, с резкими переходами, тот же способ, что и при <a href='https://css-tricks.com/stripes-css/' target="_blank" rel="nofollow noopener noreferrer">рисовании полос в CSS</a>. Это довольно большой кусок проверенного CSS, который работает стабильно, но я вижу, что вместо этого они выбрали фоновое изображение. Это SVG изображение можно <a href='assets/img/articles/2019-12-27/rainbow.svg' target="_blank" rel="nofollow noopener noreferrer">посмотреть здесь</a>. Оно весит всего 661 байт и это очень мало. Мы можем сделать это изображение похожим на подчеркивание ограничив высоту с помощью <i>background-size</i> и расположив его под текстом с помощью свойства <i>background-position</i>.</p>
+              <p>Мы будем делать это на вложенном инлайновом элементе, чтобы подчеркивание переносилось там, где переносятся слова.</p>
+              <pre><code class="language-css">h1 span {
+  background-image: url(rainbow.svg);
+  background-repeat: repeat-x;
+  background-size: 100vw 0.2em;
+  background-position: left bottom 5px;
+}
+</code></pre>
+              <p>Чтобы получить анимацию, мы будем изменять значение <i>background-position-x</i>. Не самое производительное свойство для анимаций, но мы не анимируем изображение в полном смысле этого слова, а всего-лишь сдвигаем его в зависимости от положения прокрутки. Вместо того, чтобы вручную управлять свойством <i>background-position-x</i>, мы зададим его с помощью кастомного CSS свойства, а затем будем обрабатывать с помощью JavaScript.</p>
+              <pre><code class="language-css">background-position-x: var(--scrollPos);
+</code></pre>
+              <p>Обновлять эту переменную во время прокрутки страницы очень просто:</p>
+              <pre><code class="language-js">window.addEventListener("scroll", e => {
+  let scrollTop = document.body.scrollTop ? document.body.scrollTop : document.documentElement.scrollTop;
+  let newPos = scrollTop + "px";
+  document.documentElement.style.setProperty('--scrollPos', newPos);
+});
+</code></pre>
+              <p>И это работает!</p>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/Odinokun/embed/OJPgBNM?height=600&amp;amp;default-tab=result&amp;amp;embed-version=2" height="500" style="width: 100%;"></iframe>
+              </div>
+              <p>Видите что-то вроде “артефактной” линии там, где я использую <i>document.body</i> или <i>document.documentElement</i>? Это дурацкий кроссбраузерный баг, из-за того, что реализация “элемента прокрутки” в Safari отличается от ее реализации в остальных браузерах.</p>
+              <p>Пока я делал этот пример, я узнал, что можно использовать <i>document.scrollingElement</i>, что бы избежать этого бага. Я оставлю коментарий про это в коде, но сам код изменять не буду, чтобы сохранить первоначальный вариант.</p>
+            </div>
+            <!--end article__body-->
+            <!--begin article__footer-->
+            <footer class="article__footer article-footer">
+              <h3 class="article-footer__title">Больше статей тут</h3>
+              <div class="article-footer__links"><a class="article-footer__link article-footer__link--xaaser" href="blog.html">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#blog"></use>
+                  </svg></a><a class="article-footer__link article-footer__link--telegram" href="https://t.me/vitaliiborodulin" target="_blank" rel="nofollow noopener noreferrer">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#telegram"></use>
+                  </svg></a><a class="article-footer__link article-footer__link--rss" href="http://xaaser2006.ru/rss.xml" target="_blank" rel="nofollow noopener noreferrer">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#rss"></use>
+                  </svg></a></div>
+            </footer>
+            <!--end article__footer-->
+          </article>
+        </div>
+      </div>
+      <!--end content-->
+    </div>
+    <script src="assets/js/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

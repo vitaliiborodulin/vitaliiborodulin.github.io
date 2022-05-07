@@ -1,0 +1,195 @@
+<!--===== svg icon =====-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Рисуем Гомера Симпсона используя круги в CSS | odinokun.com</title>
+    <meta name="description" content="Рисуем Гомера Симпсона используя круги в CSS | odinokun.com">
+    <meta name="author" content="http://xaaser2006.ru/">
+    <!-- begin responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- end responsive-->
+    <!-- begin social content&image-->
+    <meta property="og:title" content="Рисуем Гомера Симпсона используя круги в CSS | odinokun.com">
+    <meta property="og:image" content="assets/img/articles/2019-12-16/homer-top.jpg">
+    <meta property="og:image:width" content="750">
+    <meta property="og:image:height" content="500">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- end social content&image-->
+    <!-- begin favicon block start-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon/favicon.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.jpg">
+    <!-- end favicon block end-->
+    <!--begin fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7COswald%7CRoboto+Condensed:300,400,700%7CTeko&amp;display=swap&amp;subset=cyrillic-ext" rel="stylesheet">
+    <!--end fonts-->
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- begin custom browsers color-->
+    <meta name="theme-color" content="#0b0b0b">
+    <!-- end custom browsers color-->
+    <!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="main-wrap" id="main-wrap">
+      <!-- begin aside-->
+      <aside class="aside" id="aside">
+        <!--begin menu-->
+        <nav class="aside__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--home"><a class="menu__link" href="/">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#home"></use>
+                </svg><span class="menu__text">home</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="cv.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#resume"></use>
+                </svg><span class="menu__text">cv</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="works.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#works"></use>
+                </svg><span class="menu__text">works</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="blog.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#blog"></use>
+                </svg><span class="menu__text">blog</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="contacts.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#contacts"></use>
+                </svg><span class="menu__text">contacts</span></a></li>
+          </ul>
+        </nav>
+        <!--end menu-->
+      </aside>
+      <!-- end aside-->
+      <!--begin content-->
+      <div class="main article-page">
+        <!--begin burger-->
+        <div class="burger" id="burger">
+          <div class="burger__line burger__line--top"></div>
+          <div class="burger__line burger__line--middle-01"></div>
+          <div class="burger__line burger__line--middle-02"></div>
+          <div class="burger__line burger__line--bottom"></div>
+        </div>
+        <!--end burger-->
+        <!--begin scroll-2-top--><a class="scroll-2-top scroll-2-anchor" href="#main-wrap" id="scroll-2-top">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#scroll-2-top"></use>
+          </svg></a>
+        <!--end scroll-2-top-->
+        <div class="container">
+          <article class="article">
+            <!--begin article__header-->
+            <header class="article__header">
+              <div class="article__top-img"><img src="assets/img/articles/2019-12-16/homer-top.jpg" alt="Homer Simpson"></div>
+              <div class="article__info">
+                <h1 class="article__title">Рисуем Гомера Симпсона используя круги в CSS</h1>
+                <div class="article__date" title="Date of publication of the original article">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#calendar"></use>
+                  </svg>
+                  <time datetime="2019-12-11">2019-12-11</time>
+                </div>
+                <!--begin article__origin-->
+                <div class="article__origin"><span class="article__origin-text">Перевод статьи:</span><a class="article__origin-article" href="https://dev.to/alvaromontoro/drawing-homer-simpson-using-circles-in-css-4gc1" target="_blank" rel="nofollow noopener noreferrer">Drawing Homer Simpson using circles in CSS</a></div>
+                <div class="article__origin" title="The author of the article"><span class="article__origin-text">Автор:</span><span class="article__origin-author">Alvaro Montoro</span></div>
+                <!--end article__origin-->
+                <!--begin article__tags-->
+                <div class="article__tags"><span class="article__tag">css</span><span class="article__tag">drawing</span></div>
+                <!--end article__tags-->
+              </div>
+            </header>
+            <!--end article__header-->
+            <!--begin article__body-->
+            <div class="article__body article-body">
+              <p>Css рисунки, обычно, являются набором фигур, из которых в итоге составляют изображение. Мультипликационный персонаж, такой как Гомер Симпсон, не вписывается в эту категорию, из-за чего рисовать его на CSS - настоящий вызов.</p>
+              <p>Более того, этот изображение было сделано как часть <a href="https://blog.codepen.io/2019/02/04/codepenchallenge-shapes/" target="_blank" rel="nofollow noopener noreferrer">CodePen challenge</a> который состоял в построении чего-либо ограничивая себя только одной фигурой - кругом, что добавило интереса к рисованию.</p>
+              <p>Поэтому это будет не простая статья о том, как рисовать на CSS. Это также не указание на самый верный способ для создания картинки, особенно, если существует более простой способ, но в тоже время это очень интересный вариант для решения этой проблемы.</p>
+              <p>И теперь вы можете спросить меня: <i>“Как же ты собираешься рисовать Гомера Симпсона используя только круги?”</i> - и это будет отличный вопрос.</p>
+              <p>В первую очередь мы подберем изображение. Я не рисовал Гомера Симпсона по памяти, у меня было изображение которым я руководствовался для наложения на него контуров.</p>
+              <p>Хитрость заключается в <strong><i>использовании двух кругов для каждой линии:</i></strong> одним кругом рисуем линию, а вторым кругом обрезаем ее. Один круг внутри другого:</p>
+              <ul>
+                <li>Внутренний круг используется для рисования линии. У него есть граница, и он спозиционирован абсолютно внутри второго круга;</li>
+                <li>Наружный круг мы используем для обрезания внутреннего круга. У него нет границ, заливки (фона), нет ничего кроме свойства <strong><i>overflow: hidden;</i></strong></li>
+              </ul>
+              <p>Что-то вроде этого:</p>
+              <div class="article-body__img"><img src="assets/img/articles/2019-12-16/circles.jpg" alt="circles"></div>
+              <p>Если перевести это в код, то он будет выглядеть вот так:</p>
+              <pre><code class="language-html">&lt;div id='part-of-Homer-face'>
+  &lt;div>&lt;/div>
+&lt;/div>
+</code></pre>
+              <pre><code class="language-css">div {
+  border: 0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+div > div {
+  border: 3px solid black;
+}
+
+/* exterior circle*/
+#part-of-Homer-face {
+  top: ...px;
+  left: ...px;
+}
+
+/* interior circle */
+#part-of-Homer-face > div {
+  top: ...px;
+  left: ...px;
+}
+</code></pre>
+              <p><strong><i>Следующим шагом будет разделение изображения на фигуры.</i></strong> Я помню, что мы используем только круги, так что нужно разбить его на круглые и не очень круглые фигуры.</p>
+              <p>Итак, давайте сосредоточимся на тех частях Гомера Симпсона которые по большей части круглые: глаза, уши, кончик носа, верхняя часть головы и так далее. Я буду использовать глаза как стартовую точку для рисования, потому что они очень просты в реализации и они сразу придают рисунку <i>индивидуальность.</i></p>
+              <p>Добавление первых обрезающих кругов позволяет нам достичь чего-то вроде этого:</p>
+              <div class="article-body__img article-body__img--center"><img src="assets/img/articles/2019-12-16/homer-01.jpg" alt="homer"><span><i>Это еще не готовый рисунок, но Гомер уже просматривается.</i></span></div>
+              <p>Ваша следующая мысль скорее всего будет: <i>“Этот рисунок уже супер-крутой</i> - Спасибо! - <i>но как насчет прямых линий? Гомер не полностью состоит из кривых, и пока что это просто кучка кружков”.</i></p>
+              <p>Отвечаю на вопрос: прямые линии немного сложнее, но на самом деле, не такие уж и сложные. Если у вас есть действительно огромный круг, но вы видите лишь небольшую его часть, то будет ли он выглядеть как круг?</p>
+              <p><strong><i>Если вы сделаете круг достаточно большим и отобразите только часть его, то вы сможете увидеть небольшую кривизну, но в основном, это будет выглядеть как прямая линия.</i></strong><br> И вот то, что получилось.</p>
+              <p>После добавления тех “прямых” линий, наш Гомер выглядит намного больше похожим на Гомера:</p>
+              <div class="article-body__img article-body__img--center"><img src="assets/img/articles/2019-12-16/homer-02.jpg" alt="homer"><span><i>Это больше похоже на рисунок, отсутствуют только финальные штрихи.</i></span></div>
+              <p>Наконец, <strong><i>нам надо добавить линии, чтобы соединить все элементы.</i></strong> Это может быть самой трудной частью, потому что линии в CSS не будут идеально совпадать, оставляя пропуски между собой.</p>
+              <p>Если вы все сделаете правильно, то вы не заметите соединения и при 100% увеличении, но если увеличить масштаб, то будет видно, что соединения далеки от совершенства. Также вы заметите, что рисунки на CSS отлично масштабируются.</p>
+              <p>Итоговый результат вы можете посмотреть здесь (при наведении мыши показываются все линии, но будьте осторожны, так как это выглядит жутковато):</p>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/alvaromontoro/embed/wvBoEyr?height=600&amp;amp;default-tab=result&amp;amp;embed-version=2" height="500" style="width: 100%;"></iframe><span><i>Или посмотрите <a href='https://codepen.io/alvaromontoro/pen/JxMPqa' target="_blank" rel="nofollow noopener noreferrer">анимационную версию создания портрета нашего Гомера Симпсона</a></i></span>
+              </div>
+              <p>Повторюсь, что это не лучший вариант для рисования на CSS, но у него есть некоторые преимущества: это самый простой HTML и CSS. Ни трансформаций, ни clip-path, ни градиентов, ни причудливого CSS3… только границы и <strong><i>overflow:hidden.</i></strong> А это значит, что изображение будет выглядеть одинаково в большинстве браузеров:</p>
+              <div class="article-body__img article-body__img--center"><img src="assets/img/articles/2019-12-16/homer-in-browsers.jpg" alt="homer"></div>
+              <p>...ураааа!</p>
+              <p>Если вам нравится рисовать на CSS и/или Симпсоны, здесь есть коллекция <a href='https://codepen.io/collection/DrwLdN/' target="_blank" rel="nofollow noopener noreferrer">разных персонажей из Симпсонов, которые нарисованы с помощью CSS и HTML.</a> Я начал рисовать Гомера Симпсона пару месяцев назад и кто-то посоветовал мне написать статью, про то, как я это сделал. Это заняло у меня много времени и вероятно это не та статья, которую они имели в виду, но я надеюсь, что она вам понравилась.</p><br>
+              <div class="article-body__small-text">
+                <p><i>Примечание: Персонаж и изображение Гомера Симпсона защищены авторским правом и используются в этом посте только в исследовательских и образовательных целях.</i></p>
+              </div>
+            </div>
+            <!--end article__body-->
+            <!--begin article__footer-->
+            <footer class="article__footer article-footer">
+              <h3 class="article-footer__title">Больше статей тут</h3>
+              <div class="article-footer__links"><a class="article-footer__link article-footer__link--xaaser" href="blog.html">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#blog"></use>
+                  </svg></a><a class="article-footer__link article-footer__link--telegram" href="https://t.me/vitaliiborodulin" target="_blank" rel="nofollow noopener noreferrer">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#telegram"></use>
+                  </svg></a><a class="article-footer__link article-footer__link--rss" href="http://xaaser2006.ru/rss.xml" target="_blank" rel="nofollow noopener noreferrer">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#rss"></use>
+                  </svg></a></div>
+            </footer>
+            <!--end article__footer-->
+          </article>
+        </div>
+      </div>
+      <!--end content-->
+    </div>
+    <script src="assets/js/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

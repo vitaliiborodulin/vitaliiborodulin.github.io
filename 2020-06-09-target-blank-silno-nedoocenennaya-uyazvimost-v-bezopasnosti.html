@@ -1,0 +1,156 @@
+<!--===== svg icon =====-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>target = &quot;_blank&quot; - сильно недооцененная уязвимость в безопасности</title>
+    <meta name="description" content="Разберемся с тем, что в действительности происходит, когда вы открываете ссылку в новом окне, указав target=&quot;_blank&quot; и чем это может обернуться для пользователя.">
+    <meta name="author" content="http://xaaser2006.ru/">
+    <!-- begin responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- end responsive-->
+    <!-- begin social content&image-->
+    <meta property="og:title" content="target = &quot;_blank&quot; - сильно недооцененная уязвимость в безопасности">
+    <meta property="og:image" content="assets/img/articles/2020-06-09/top-img.jpg">
+    <meta property="og:image:width" content="750">
+    <meta property="og:image:height" content="500">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- end social content&image-->
+    <!-- begin favicon block start-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon/favicon.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.jpg">
+    <!-- end favicon block end-->
+    <!--begin fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7COswald%7CRoboto+Condensed:300,400,700%7CTeko&amp;display=swap&amp;subset=cyrillic-ext" rel="stylesheet">
+    <!--end fonts-->
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- begin custom browsers color-->
+    <meta name="theme-color" content="#0b0b0b">
+    <!-- end custom browsers color-->
+    <!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="main-wrap" id="main-wrap">
+      <!-- begin aside-->
+      <aside class="aside" id="aside">
+        <!--begin menu-->
+        <nav class="aside__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--home"><a class="menu__link" href="/">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#home"></use>
+                </svg><span class="menu__text">home</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="cv.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#resume"></use>
+                </svg><span class="menu__text">cv</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="works.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#works"></use>
+                </svg><span class="menu__text">works</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="blog.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#blog"></use>
+                </svg><span class="menu__text">blog</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="contacts.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#contacts"></use>
+                </svg><span class="menu__text">contacts</span></a></li>
+          </ul>
+        </nav>
+        <!--end menu-->
+      </aside>
+      <!-- end aside-->
+      <!--begin content-->
+      <div class="main article-page">
+        <!--begin burger-->
+        <div class="burger" id="burger">
+          <div class="burger__line burger__line--top"></div>
+          <div class="burger__line burger__line--middle-01"></div>
+          <div class="burger__line burger__line--middle-02"></div>
+          <div class="burger__line burger__line--bottom"></div>
+        </div>
+        <!--end burger-->
+        <!--begin scroll-2-top--><a class="scroll-2-top scroll-2-anchor" href="#main-wrap" id="scroll-2-top">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#scroll-2-top"></use>
+          </svg></a>
+        <!--end scroll-2-top-->
+        <div class="container">
+          <article class="article">
+            <!--begin article__header-->
+            <header class="article__header">
+              <div class="article__top-img"><img src="assets/img/articles/2020-06-09/top-img.jpg" alt="Homer Simpson"></div>
+              <div class="article__info">
+                <h1 class="article__title">target = &quot;_blank&quot; - сильно недооцененная уязвимость в безопасности</h1>
+                <div class="article__date">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#calendar"></use>
+                  </svg>
+                  <time datetime="2019-06-09">2019-06-09</time>
+                </div>
+                <!--begin article__origin-->
+                <div class="article__origin"><span class="article__origin-text">Перевод статьи:</span><a class="article__origin-article" href="https://www.manjuladube.dev/target-blank-security-vulnerability" target="_blank" rel="nofollow noopener noreferrer">target=&quot;_blank&quot; - the most underrated security vulnerability</a></div>
+                <div class="article__origin" title="The author of the article"><span class="article__origin-text">Автор:</span><span class="article__origin-author">Manjula Dube
+                  </span></div>
+                <!--end article__origin-->
+                <!--begin article__tags-->
+                <div class="article__tags"><span class="article__tag">links</span><span class="article__tag">target="_blank"</span></div>
+                <!--end article__tags-->
+              </div>
+            </header>
+            <!--end article__header-->
+            <!--begin article__body-->
+            <div class="article__body article-body">
+              <p>Недавно, работая над своим сайтом, я наткнулась на любопытную вещь когда использовала атрибут <i class='highlight-text'>target="_blank"</i> для ссылок.</p>
+              <p><strong>Что в действительности происходит, когда вы открываете ссылку в новом окне, указав target="_blank"?</strong></p>
+              <ul>
+                <li>Страница, на которую мы ссылаемся, получает ограниченный доступ к текущей странице через объект <i class='highlight-text'>window.opener</i></li>
+                <li>Недавно открытая страница теперь может изменить <i class='highlight-text'>window.opener.location</i> на любую фишинговую страницу. При таком сценарии использования пользователь доверяет странице на которую переходит с вашего сайта и будет относится к ней без подозрения.</li>
+              </ul>
+              <h2 class="article-body__title">Рассмотрим сценарий возможной атаки</h2>
+              <p>Создайте поддельную "фишинговую" страницу с изображениями милых котиков, который всем понравятся, поделитесь ей на Facebook (который будет открывать вашу ссылку через _blank).</p>
+              <p>Создайте "фишинговый" сайт например по такому адресу <strong><i>https://phishingwebsite/facebook.com/page.html</i></strong> и разместите следующий код на вашей "фишинговой" странице.</p>
+              <pre><code class="language-js">window.opener.location = 'https://phishingwebsite/facebook.com/page.html';
+</code></pre>
+              <p>Этот код перенаправит с Facebook на вашу фишинговую страницу, попросив пользователя повторно ввести свой пароль Facebook, и теперь пользователь находится на Facebook, а на этой поддельной веб-странице, похожей на Facebook. Эта фальшивая страница выглядит точно так же, как Facebook, и она просит войти, потому что вы по какой-то причине вышли из системы. Пользователь, не слишком задумываясь об этом, вводит свои учетные данные и отправляет форму.</p>
+              <h3 class="article-body__subtitle">Что же произошло?</h3>
+              <p>Вы только что отправили свои личные учетные данные кому-то, кто теперь может войти в вашу учетную запись Facebook и делать в ней все что захочет, например, может изменить учетные данные.</p>
+              <h3 class="article-body__subtitle">Давайте посмотрим, как мы можем это исправить</h3>
+              <p>Добавьте для ссылки атрибут <i class='highlight-text'>rel</i> с значением <i class='highlight-text'>noopener</i>.</p>
+              <pre><code class="language-html">&lt;a href= '/share' rel="noopener" target="_blank"/>
+</code></pre>
+              <p>Совсем старые браузеры, например такие как IE11, не поддерживают значение <i class='highlight-text'>"noopener"</i> и для них придется добавить еще одно значение для атрибута <i class='highlight-text'>rel</i> - <i class='highlight-text'>"noreferrer"</i></p>
+              <pre><code class="language-html">&lt;a href= '/share' rel="noopener noreferrer" target="_blank"/>
+</code></pre>
+              <div class="article-body__img article-body__img--center"><img src="assets/img/articles/2020-06-09/img-01.jpg" alt="caniuse"><span><i>поддержка rel="noopener" браузерами</i></span></div>
+              <p>Подытоживая все вышесказанное, для ссылок с <i class='highlight-text'>target="_blank"</i>, всегда следует добавлять <i class='highlight-text'>rel="noopener noreferrer"</i>, как меру предосторожности против фишинга. Это гарантирует, что значение <i class='highlight-text'>window.opener</i> будет null, в Chrome и Firefox. В Safari Technology Preview 68, для <i class='highlight-text'>target="_blank"</i> задается <i class='highlight-text'>rel="noopener"</i> по умолчанию.</p>
+              <p>Спасибо, что прочитали мои мысли по этой теме.</p>
+            </div>
+            <!--end article__body-->
+            <!--begin article__footer-->
+            <footer class="article__footer article-footer">
+              <h3 class="article-footer__title">Больше статей тут</h3>
+              <div class="article-footer__links"><a class="article-footer__link article-footer__link--xaaser" href="blog.html">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#blog"></use>
+                  </svg></a><a class="article-footer__link article-footer__link--telegram" href="https://t.me/vitaliiborodulin" target="_blank" rel="nofollow noopener noreferrer">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#telegram"></use>
+                  </svg></a><a class="article-footer__link article-footer__link--rss" href="http://xaaser2006.ru/rss.xml" target="_blank" rel="nofollow noopener noreferrer">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#rss"></use>
+                  </svg></a></div>
+            </footer>
+            <!--end article__footer-->
+          </article>
+        </div>
+      </div>
+      <!--end content-->
+    </div>
+    <script src="assets/js/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

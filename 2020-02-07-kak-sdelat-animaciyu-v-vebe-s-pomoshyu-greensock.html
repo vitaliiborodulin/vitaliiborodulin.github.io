@@ -1,0 +1,427 @@
+<!--===== svg icon =====-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Как сделать анимацию в вебе с помощью GreenSock</title>
+    <meta name="description" content="Как сделать анимацию в вебе с помощью GreenSock">
+    <meta name="author" content="http://xaaser2006.ru/">
+    <!-- begin responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- end responsive-->
+    <!-- begin social content&image-->
+    <meta property="og:title" content="Как сделать анимацию в вебе с помощью GreenSock">
+    <meta property="og:image" content="assets/img/articles/2020-02-07/top-img.jpg">
+    <meta property="og:image:width" content="750">
+    <meta property="og:image:height" content="500">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- end social content&image-->
+    <!-- begin favicon block start-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon/favicon.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.jpg">
+    <!-- end favicon block end-->
+    <!--begin fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7COswald%7CRoboto+Condensed:300,400,700%7CTeko&amp;display=swap&amp;subset=cyrillic-ext" rel="stylesheet">
+    <!--end fonts-->
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- begin custom browsers color-->
+    <meta name="theme-color" content="#0b0b0b">
+    <!-- end custom browsers color-->
+    <!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="main-wrap" id="main-wrap">
+      <!-- begin aside-->
+      <aside class="aside" id="aside">
+        <!--begin menu-->
+        <nav class="aside__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--home"><a class="menu__link" href="/">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#home"></use>
+                </svg><span class="menu__text">home</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="cv.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#resume"></use>
+                </svg><span class="menu__text">cv</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="works.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#works"></use>
+                </svg><span class="menu__text">works</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="blog.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#blog"></use>
+                </svg><span class="menu__text">blog</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="contacts.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#contacts"></use>
+                </svg><span class="menu__text">contacts</span></a></li>
+          </ul>
+        </nav>
+        <!--end menu-->
+      </aside>
+      <!-- end aside-->
+      <!--begin content-->
+      <div class="main article-page">
+        <!--begin burger-->
+        <div class="burger" id="burger">
+          <div class="burger__line burger__line--top"></div>
+          <div class="burger__line burger__line--middle-01"></div>
+          <div class="burger__line burger__line--middle-02"></div>
+          <div class="burger__line burger__line--bottom"></div>
+        </div>
+        <!--end burger-->
+        <!--begin scroll-2-top--><a class="scroll-2-top scroll-2-anchor" href="#main-wrap" id="scroll-2-top">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#scroll-2-top"></use>
+          </svg></a>
+        <!--end scroll-2-top-->
+        <div class="container">
+          <article class="article">
+            <!--begin article__header-->
+            <header class="article__header">
+              <div class="article__top-img"><img src="assets/img/articles/2020-02-07/top-img.jpg" alt="GSAP"></div>
+              <div class="article__info">
+                <h1 class="article__title">Как сделать анимацию в вебе с помощью GreenSock</h1>
+                <div class="article__date" title="Date of publication of the original article">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#calendar"></use>
+                  </svg>
+                  <time datetime="2020-01-18">2020-01-18</time>
+                </div>
+                <!--begin article__origin-->
+                <div class="article__origin"><span class="article__origin-text">Перевод статьи:</span><a class="article__origin-article" href="https://css-tricks.com/how-to-animate-on-the-web-with-greensock/" target="_blank" rel="nofollow noopener noreferrer">How to Animate on the Web With GreenSock</a></div>
+                <div class="article__origin" title="The author of the article"><span class="article__origin-text">Автор:</span><span class="article__origin-author">Sarah Drasner</span></div>
+                <!--end article__origin-->
+                <!--begin article__tags-->
+                <div class="article__tags"><span class="article__tag">javascript</span><span class="article__tag">animation</span><span class="article__tag">greensock</span><span class="article__tag">GSAP</span><span class="article__tag">SVG</span><span class="article__tag">css</span></div>
+                <!--end article__tags-->
+              </div>
+            </header>
+            <!--end article__header-->
+            <!--begin article__body-->
+            <div class="article__body article-body">
+              <p>Существуют тысячи способов сделать анимацию в Интернете. Ранее мы уже рассматривали <a href="https://css-tricks.com/comparison-animation-technologies/" target="_blank" rel="nofollow noopener noreferrer">сравнение различных технологий анимаций</a>. Сегодня же, мы собираемся погрузиться в пошаговое руководство по одному из самых моих любимых способов делать анимации - использование GreenSock.</p>
+              <p><i>(Они не платят мне и не подкупают каким-либо еще способом. Мне действительно нравиться их использовать.)</i></p>
+              <p>Почему я предпочитаю GreenSock другим методам? Да потому, что зачастую это лучший инструмент для работы. Его использование чрезвычайно просто, даже для сложных анимаций. А вот еще несколько причин, почему я предпочитаю его использовать:</p>
+              <ul>
+                <li>Вы можете использовать его как для элементов DOM, так и для WebGl/Canvas/Three.js содержимого.</li>
+                <li>Замедление на Css создать достаточно сложно. Css-анимации ограничены двумя точками Безье, а это означает, что если вы хотите сделать, скажем эффект отскока, то вам придется создавать ключевые кадры верхнего и нижнего положения для каждого движения. GreenSock позволяет использовать несколько точек Безье для создания более продвинутых эффектов. Отскок - это одна строка кода. Вы можете сами в этом убедиться взглянув на <a href="https://greensock.com/ease-visualizer" target="_blank" rel="nofollow noopener noreferrer">этот визуализатор</a>.</li>
+                <li>Вы можете задавать последовательность анимации относительно временной шкалы. Код для css-анимаций становится слегка спагеттевидным, когда вы объединяете несколько анимаций в одно скоординированное движение. GreenSock в такой ситуации остается довольно простым и при этом позволяет контролировать саму шкалу времени.</li>
+                <li>GreenSock будет выполнять некоторые вычисления под капотом, чтобы избежать разного поведения в разных браузерах.</li>
+                <li>Также GreenSock предлагает расширение функционала в виде плагинов, которые вы можете использовать при необходимости. Например при морфинге SVG форм, рисовании SVG путей, перетаскивании, бросании, анимации с учетом инерции и др.</li>
+              </ul>
+              <p>Люди иногда спрашивают меня, почему я использую именно эту библиотеку, несмотря на множество других вариантов. Потому что она существует дольше чем большинство альтернативных библиотек. Это демо очень вдохновляет, а так-же демонстрирует, что серьезный веб-аниматор может сделать благодаря этому инструменту:</p>
+              <div class="article-body__youtube">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pFqBqgOv9E8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <p>Далее рассмотрим пошаговое описание того, как создавать движения в вебе, до самых маленьких кусочков, которые можно сделать. Итак, приступим!</p>
+              <h2 class="article-body__subtitle">Анимация DOM элемента</h2>
+              <p>Для примера возьмем шар, который мы создадим с помощью <i class='highlight-text'>div</i> которому зададим <i class='highlight-text'>border-radius: 50%</i>. Вот так мы будем масштабировать и перемещать его с помощью GreenSock:</p>
+              <pre><code class="language-html">&lt;div class="ball">&lt;/div>
+</code></pre>
+              <pre><code class="language-js">gsap.to('.ball', {
+  duration: 1,
+  x: 200,
+  scale: 2
+})
+</code></pre>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/sdras/embed/5ce254bb4f4d2bb240081b0eb6d6554d?height=350&amp;amp;default-tab=result&amp;amp;embed-version=2" height="350" style="width: 100%;"></iframe>
+              </div>
+              <p>В данном случае, мы говорим GreenSock (GSAP) взять элемент с классом <i class='highlight-text'>.ball</i> и переместить его <i class='highlight-text'>.to()</i> используя несколько свойств. Мы сократили свойство Css <i class='highlight-text'>transform: translateX(200px)</i> до короткого <i class='highlight-text'>x: 200</i> (обратите внимание, что нет необходимости в единицах измерения, но их можно задавать в виде строки). Мы также не пишем <i class='highlight-text'>transform: scale(2)</i>. Вот трансформации которые вы можете анимировать и соответствующий им синтаксис в CSS.</p>
+              <pre><code class="language-js">x: 100 // transform: translateX(100px)
+y: 100 // transform: translateY(100px)
+z: 100 // transform: translateZ(100px)
+// you do not need the null transform hack or hardware acceleration, it comes baked in with
+// force3d:true. If you want to unset this, force3d:false
+scale: 2 // transform: scale(2)
+scaleX: 2 // transform: scaleX(2)
+scaleY: 2 // transform: scaleY(2)
+scaleZ: 2 // transform: scaleZ(2)
+skew: 15 // transform: skew(15deg)
+skewX: 15 // transform: skewX(15deg)
+skewY: 15 // transform: skewY(15deg)
+rotation: 180 // transform: rotate(180deg)
+rotationX: 180 // transform: rotateX(180deg)
+rotationY: 180 // transform: rotateY(180deg)
+rotationZ: 180 // transform: rotateZ(180deg)
+perspective: 1000 // transform: perspective(1000px)
+transformOrigin: '50% 50%' // transform-origin: 50% 50%
+</code></pre>
+              <p>Продолжительность (duration) - это как вы догадались отрезок времени в одну секунду.<br>Итак, как бы нам оживить, скажем, SVG? Давайте попробуем применить наш код, указанный выше, для SVG.</p>
+              <pre><code class="language-html">&lt;svg viewBox="0 0 500 400">
+  &lt;circle class="ball" cx="80" cy="80" r="80" />
+&lt;/svg>
+</code></pre>
+              <pre><code class="language-js">gsap.to('.ball', {
+  duration: 1,
+  x: 200,
+  scale: 2
+})
+</code></pre>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/sdras/embed/f8d8d77940f46fe2a23e13d01ad265d6?height=350&amp;amp;default-tab=result&amp;amp;embed-version=2" height="350" style="width: 100%;"></iframe>
+              </div>
+              <p>С точки зрения анимации, все работает точно также. Находится элемент с классом <i class='highlight-text'>.ball</i> и к нему применяются указанные свойства. Поскольку SVG - это DOM элементы, мы можем задать класс любому из них и анимировать так же как и любой другой DOM элемент.<br>Прекрасно!</p>
+              <h2 class="article-body__subtitle">Eases</h2>
+              <p>Ранее я упоминала, что eases - одна из моих любимых функций и я хочу показать как она работает.</p>
+              <p>Давайте возьмем наш мяч. Может быть вы хотите попробовать один из уникальных эффектов отскока? Это выглядело бы вот так:</p>
+              <pre><code class="language-js">gsap.to('.ball', {
+  duration: 1.5,
+  x: 200,
+  scale: 2,
+  ease: 'bounce'
+})
+</code></pre>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/sdras/embed/d58767cf1588be1d00c6e68c59ee3ca0?height=350&amp;amp;default-tab=result&amp;amp;embed-version=2" height="350" style="width: 100%;"></iframe>
+              </div>
+              <p>Вот это да!<br>В текущей версии GreenSock по умолчанию применяется режим <i class='highlight-text'>ease-out</i> (что хорошо для начала анимации). Все, что вам нужно сделать - это указать значение <i class='highlight-text'>"bounce"</i> в виде строки.</p>
+              <h2 class="article-body__subtitle">Задержки и продолжительность</h2>
+              <p>Я упомянула, что значение по умолчанию ease-out хорошо для начала анимации. А что насчет <i class='highlight-text'>easy-in</i> или <i class='highlight-text'>ease-in-out</i> для окончания анимации? Давайте попробуем это сделать.</p>
+              <pre><code class="language-js">gsap.to('.ball', {
+  duration: 1.5,
+  x: 200,
+  scale: 2,
+  ease: 'bounce'
+})
+
+gsap.to('.ball', {
+  duration: 1.5,
+  delay: 1.5,
+  x: 0,
+  scale: 1,
+  ease: 'back.inOut(3)'
+})
+</code></pre>
+              <p>Вы могли заметить, что произошло несколько вещей. Например, мы не использовали <i class='highlight-text'>bounce.in</i> в предпоследней строке (<i class='highlight-text'>ease: 'back.inOut(3)'</i>). Вместо этого мы использовали другую функцию <i class='highlight-text'>ease</i> вызвав <i class='highlight-text'>back</i> для <i class='highlight-text'>ease-in-out</i>. Мы также передали опцию конфигурации, потому что, как вы можете видеть с помощью визуализатора GreenSock, мы не ограничены только дефолтной конфигурацией для этой функции. Мы можем регулировать ее так, как нам нужно. <br>Замечательно!</p>
+              <p>Возможно, вы также заметили, что мы создали анимацию с задержкой. Мы взяли длину первой анимации и сделали для следующей анимации соответствующую задержку. Это вполне неплохо работает, но сложно в поддержке. Что если нам понадобиться изменить продолжительность первой части анимации? Это означает, что мы должны будем изменять и задержку для последующей анимации. А если у нас будет еще одна следующая анимация? И еще одна? Нужно будет рассчитывать и изменять все остальные задержки отталкиваясь от новых данных. Это очень много работы которую прийдется делать вручную.</p>
+              <p>Мы можем переложить эту работу на компьютер. Некоторые из моих наиболее сложных анимаций - это сотни связанных более простых анимаций! Если я в конце своей работы захочу изменить какие-то данные в самом начале, то я не хочу переделывать всю анимацию.</p>
+              <pre><code class="language-js">gsap
+  .timeline()
+  .to(‘.ball’, {
+    duration: 1.5,
+    x: 200,
+    scale: 2,
+    ease: "bounce"
+  })
+  .to(‘.ball’, {
+    duration: 1.5,
+    x: 0,
+    scale: 1,
+    ease: "back.inOut(3)"
+  });
+</code></pre>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/sdras/embed/657185aedbcddeccc2126a29b3203167?height=350&amp;amp;default-tab=result&amp;amp;embed-version=2" height="350" style="width: 100%;"></iframe>
+              </div>
+              <p>Этот пример кода создает временную шкалу, а затем связывает между собой две анимации.</p>
+              <p>Но у нас все еще есть немного дублирования кода, в котором мы продолжаем использовать одну и ту же продолжительность в каждой анимации. Давайте создадим для этого значение по умолчанию, которое будет передано на временную шкалу.</p>
+              <pre><code class="language-js">gsap
+  .timeline({
+    defaults: {
+      duration: 1.5
+    }
+  })
+  .to('.ball', {
+    x: 200,
+    scale: 2,
+    ease: "bounce"
+  })
+  .to('.ball', {
+    x: 0,
+    scale: 1,
+    ease: "back.inOut(3)"
+  });</code></pre>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/sdras/embed/1904087b6b3ee7cf3a71180aaf21d45a?height=350&amp;amp;default-tab=result&amp;amp;embed-version=2" height="350" style="width: 100%;"></iframe>
+              </div>
+              <P>Это очень круто! Ок, вы, вероятно, начинаете понемногу понимать, как все это устроено. Несмотря на то, что наш код пока что не сложен, поверьте, значения по умолчанию и временные шкалы в сложных анимациях помогут сделать ваш код легко поддерживаемым.</P>
+              <p>Теперь представьте, что нам надо отразить это движение в другом направлении с мячом и просто ... продолжать движение? Другими словами, что если нам надо зациклить его? В таком случае нам надо добавить <i class='highlight-text'>repeat: -1</i>, и это применимо как к одной анимации, так и ко всей временной шкале.</p>
+              <pre><code class="language-js">gsap
+  .timeline({
+    repeat: -1,
+    defaults: {
+      duration: 1.5
+    }
+  })
+  .to('.ball', {
+    x: 200,
+    scale: 2,
+    ease: "bounce"
+  })
+  .to('.ball', {
+    x: 0,
+    scale: 1,
+    ease: "back.inOut(3)"
+  })
+  .to('.ball', {
+    x: -200,
+    scale: 2,
+    ease: "bounce"
+  })
+  .to('.ball', {
+    x: 0,
+    scale: 1,
+    ease: "back.inOut(3)"
+  });
+</code></pre>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/sdras/embed/e034b2995e3230cf7b22403286ce9b21?height=350&amp;amp;default-tab=result&amp;amp;embed-version=2" height="350" style="width: 100%;"></iframe>
+              </div>
+              <p>Мы можем не просто заставить код повторяться, а заставить его работать в противоположную сторону, как йо-йо. Мы его именно так и назвали - правда. Чтобы показать сам принцип, мы сделаем это только с первой анимацией. Вы можете видеть, что анимация шара воспроизводится вначале вперед, а потом в другую сторону.</p>
+              <pre><code class="language-js">gsap
+  .timeline({
+    repeat: -1,
+    yoyo: true,
+    defaults: {
+      duration: 1.5
+    }
+  })
+  .to('.ball', {
+    x: 200,
+    scale: 2,
+    ease: "bounce"
+  })
+</code></pre>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/sdras/embed/e034b2995e3230cf7b22403286ce9b21?height=350&amp;amp;default-tab=result&amp;amp;embed-version=2" height="350" style="width: 100%;"></iframe>
+              </div>
+              <h2 class="article-body__subtitle">Нахлёст анимаций и метки</h2>
+              <p>То, что мы можем с легкостью объединять движения в цепочку конечно здорово, но реальные движения работают не совсем так. Если вы идете по комнате, чтобы взять чашку воды, то вы идете не все время. Когда вы дошли, то остановитесь. Потом возьмете чашку и поднимите ее. Потом выпьете воду. Человек делает много разных вещей в одном непрерывном движении. Итак, давайте вкратце поговорим о том, как прекращать движение анимации и сразу же начинать следующее.</p>
+              <p>Если мы хотим быть уверены, что все происходит немного раньше или позже друг друга на временной шкале, мы можем использовать инкремент или декремент. На следующем примере три шара анимируются один за другим и это выглядит грубовато.</p>
+              <pre><code class="language-js">gsap
+  .timeline({
+    defaults: {
+      duration: 1.5
+    }
+  })
+  .to('.ball', {
+    x: 300,
+    scale: 2,
+    ease: "bounce"
+  })
+  .to('.ball2', {
+    x: 300,
+    scale: 2,
+    ease: "bounce"
+  })
+  .to('.ball3', {
+    x: 300,
+    scale: 2,
+    ease: "bounce"
+  })</code></pre>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/sdras/embed/9807332cd6d5ebfc70417ccedf574b21?height=350&amp;amp;default-tab=result&amp;amp;embed-version=2" height="350" style="width: 100%;"></iframe>
+              </div>
+              <p>Анимация становится более гладкой, если мы слегка перекрываем движение, используя эти декременты, переданные в виде строк:</p>
+              <pre><code class="language-js">gsap
+  .timeline({
+    defaults: {
+      duration: 1.5
+    }
+  })
+  .to('.ball', {
+    x: 300,
+    scale: 2,
+    ease: "bounce"
+  })
+  .to('.ball2', {
+    x: 300,
+    scale: 2,
+    ease: "bounce"
+  }, '-=1')
+  .to('.ball3', {
+    x: 300,
+    scale: 2,
+    ease: "bounce"
+  }, '-=1')</code></pre>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/sdras/embed/2816aa314f6e0512550863ed8d4d5ae8?height=350&amp;amp;default-tab=result&amp;amp;embed-version=2" height="350" style="width: 100%;"></iframe>
+              </div>
+              <p>Еще один способ сделать это - использовать метку. Метки гарантируют, что все начинается в определенный момент времени в анимации воспроизведения. Это выглядит так: <i class='highlight-text'>.add ('labelName')</i>.</p>
+              <pre><code class="language-js">gsap
+  .timeline({
+    defaults: {
+      duration: 1.5
+    }
+  })
+  .add('start')
+  .to('.ball', {
+    x: 300,
+    scale: 2,
+    ease: "bounce"
+  }, 'start')
+  .to('.ball2', {
+    x: 300,
+    scale: 2,
+    ease: "bounce"
+  }, 'start')
+  .to('.ball3', {
+    x: 300,
+    scale: 2,
+    ease: "bounce"
+  }, 'start')</code></pre>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/sdras/embed/a2f562e899b0db07b6a44b3000e58927?height=350&amp;amp;default-tab=result&amp;amp;embed-version=2" height="350" style="width: 100%;"></iframe>
+              </div>
+              <P>Мы можем даже добавлять или уменьшать время начала анимации отталкиваясь от метки. Это выглядит так: <i class='highlight-text'>'start+=0.25'</i>.</P>
+              <pre><code class="language-js">gsap
+  .timeline({
+    defaults: {
+      duration: 1.5
+    }
+  })
+  .add('start')
+  .to('.ball', {
+    x: 300,
+    scale: 2,
+    ease: "bounce"
+  }, 'start')
+  .to('.ball2', {
+    x: 300,
+    scale: 2,
+    ease: "bounce"
+  }, 'start+=0.25')
+  .to('.ball3', {
+    x: 300,
+    scale: 2,
+    ease: "bounce"
+  }, 'start+=0.5')
+</code></pre>
+              <p>Уф! Мы можем так много сделать с этим! Вот пример анимации, которая объединяет многие из примеров выше с небольшим взаимодействием с использованием ванильного JavaScript. Не забудьте нажать на звонок.</p>
+              <div class="article-body__img">
+                <iframe src="https://codepen.io/sdras/full/LYELqPX?height=600&amp;amp;default-tab=result&amp;amp;embed-version=2" height="600" style="width: 100%;"></iframe>
+              </div>
+              <p>Если вы ищете больше информации про анимацию с помощью GreenSock, <a href="https://css-tricks.com/intro-to-vue-5-animations/" target="_blank" rel="nofollow noopener noreferrer">вот статья</a> которую я написала о том как это сделать во Vue, и мое <a href="https://www.youtube.com/watch?v=W5AdUcJDHo0" target="_blank" rel="nofollow noopener noreferrer">выступление посвященное React</a> (ему пару лет, но базовые вещи все еще применимы).</p>
+              <p>В этой статье мы не рассмотрели очень много вещей: изменение и рисование SVG, разбрасывание объектов по экрану, перемещение объектов по заданной траектории, анимирование текстов… Я бы посоветовала вам обратиться к <a href="https://greensock.com/" target="_blank" rel="nofollow noopener noreferrer">документации GreenSock</a> за этими подробностями. У меня также есть курс <a href="https://frontendmasters.com/courses/svg-essentials-animation/" target="_blank" rel="nofollow noopener noreferrer">Frontend Masters</a> в котором мы рассматриваем это все гораздо подробнее и глубже, а также есть материалы с открытым исходным кодом на <a href="https://github.com/sdras/svg-workshop" target="_blank" rel="nofollow noopener noreferrer">моем GitHub</a>. У меня таже есть <a href="https://codepen.io/sdras/" target="_blank" rel="nofollow noopener noreferrer">много Pens</a> с кодом которых можно смело экспериментировать.</p>
+              <p>Надеюсь это поможет начать вам работу с анимацией в Интернете! Я уже не могу дождаться, чтобы увидеть, что вы сделаете!</p>
+            </div>
+            <!--end article__body-->
+            <!--begin article__footer-->
+            <footer class="article__footer article-footer">
+              <h3 class="article-footer__title">Больше статей тут</h3>
+              <div class="article-footer__links"><a class="article-footer__link article-footer__link--xaaser" href="blog.html">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#blog"></use>
+                  </svg></a><a class="article-footer__link article-footer__link--telegram" href="https://t.me/vitaliiborodulin" target="_blank" rel="nofollow noopener noreferrer">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#telegram"></use>
+                  </svg></a><a class="article-footer__link article-footer__link--rss" href="http://xaaser2006.ru/rss.xml" target="_blank" rel="nofollow noopener noreferrer">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#rss"></use>
+                  </svg></a></div>
+            </footer>
+            <!--end article__footer-->
+          </article>
+        </div>
+      </div>
+      <!--end content-->
+    </div>
+    <script src="assets/js/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

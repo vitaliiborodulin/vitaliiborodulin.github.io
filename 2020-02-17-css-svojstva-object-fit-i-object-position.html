@@ -1,0 +1,186 @@
+<!--===== svg icon =====-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Css свойства object-fit и object-position - адаптация картинок встроенных в HTML</title>
+    <meta name="description" content="Css свойства object-fit и object-position - адаптация картинок встроенных в HTML">
+    <meta name="author" content="http://xaaser2006.ru/">
+    <!-- begin responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- end responsive-->
+    <!-- begin social content&image-->
+    <meta property="og:title" content="Css свойства object-fit и object-position - адаптация картинок встроенных в HTML">
+    <meta property="og:image" content="assets/img/articles/2020-02-17/top-image.jpg">
+    <meta property="og:image:width" content="750">
+    <meta property="og:image:height" content="500">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- end social content&image-->
+    <!-- begin favicon block start-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon/favicon.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.jpg">
+    <!-- end favicon block end-->
+    <!--begin fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7COswald%7CRoboto+Condensed:300,400,700%7CTeko&amp;display=swap&amp;subset=cyrillic-ext" rel="stylesheet">
+    <!--end fonts-->
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- begin custom browsers color-->
+    <meta name="theme-color" content="#0b0b0b">
+    <!-- end custom browsers color-->
+    <!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="main-wrap" id="main-wrap">
+      <!-- begin aside-->
+      <aside class="aside" id="aside">
+        <!--begin menu-->
+        <nav class="aside__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--home"><a class="menu__link" href="/">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#home"></use>
+                </svg><span class="menu__text">home</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="cv.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#resume"></use>
+                </svg><span class="menu__text">cv</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="works.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#works"></use>
+                </svg><span class="menu__text">works</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="blog.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#blog"></use>
+                </svg><span class="menu__text">blog</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="contacts.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#contacts"></use>
+                </svg><span class="menu__text">contacts</span></a></li>
+          </ul>
+        </nav>
+        <!--end menu-->
+      </aside>
+      <!-- end aside-->
+      <!--begin content-->
+      <div class="main article-page">
+        <!--begin burger-->
+        <div class="burger" id="burger">
+          <div class="burger__line burger__line--top"></div>
+          <div class="burger__line burger__line--middle-01"></div>
+          <div class="burger__line burger__line--middle-02"></div>
+          <div class="burger__line burger__line--bottom"></div>
+        </div>
+        <!--end burger-->
+        <!--begin scroll-2-top--><a class="scroll-2-top scroll-2-anchor" href="#main-wrap" id="scroll-2-top">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#scroll-2-top"></use>
+          </svg></a>
+        <!--end scroll-2-top-->
+        <div class="container">
+          <article class="article">
+            <!--begin article__header-->
+            <header class="article__header">
+              <div class="article__top-img"><img src="assets/img/articles/2020-02-17/top-image.jpg" alt="Cat"></div>
+              <div class="article__info">
+                <h1 class="article__title">Css свойства object-fit и object-position - адаптация картинок встроенных в HTML</h1>
+                <div class="article__date" title="Date of publication of the original article">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#calendar"></use>
+                  </svg>
+                  <time datetime="2020-02-12">2020-02-12</time>
+                </div>
+                <!--begin article__origin-->
+                <div class="article__origin"><span class="article__origin-text">Перевод статьи:</span><a class="article__origin-article" href="https://www.cssmine.com/blog/2020-02-12-css-object-fit-and-object-position-properties-crop-images-embedded-in-html" target="_blank" rel="nofollow noopener noreferrer">CSS object-fit and object-position properties: Crop images embedded in HTML</a></div>
+                <div class="article__origin" title="The author of the article"><span class="article__origin-text">Автор:</span><span class="article__origin-author">Martin Michalek</span></div>
+                <!--end article__origin-->
+                <!--begin article__tags-->
+                <div class="article__tags"><span class="article__tag">css</span></div>
+                <!--end article__tags-->
+              </div>
+            </header>
+            <!--end article__header-->
+            <!--begin article__body-->
+            <div class="article__body article-body">
+              <p>Свойства <i class='highlight-text'>object-fit</i> и <i class='highlight-text'>object-position</i> используют для указания размеров и позиционирования медиа-контента указанного непосредственно в HTML. В основном это картинки выведенные с помощью тега <i class='highlight-text'>img</i>, но может быть и контент который выводится с помощью тегов <i class='highlight-text'>video</i>, <i class='highlight-text'>iframe</i> или <i class='highlight-text'>embed</i>.</p>
+              <p>Эти свойства не поддерживаются в Internet Explorer, поэтому их можно использовать только на тех проектах, где его поддержка не нужна.</p>
+              <p>Свойства <i class='highlight-text'>object-fit</i> и <i class='highlight-text'>object-position</i> в какой-то мере схожи со свойствами <i class='highlight-text'>background-size</i> и <i class='highlight-text'>background-position</i>, только они применяются не в фону, а элементам вставленным непосредственно в HTML.</p>
+              <div class="article-body__img article-body__img--center"><img src="assets/img/articles/2020-02-17/example-01.jpg" alt="example"><span><i>Свойства object-fit and object-position определяют как будет вести себя медиаконтент когда пространство выделенное под него будет становиться больше или меньше.</i></span></div>
+              <p>Давайте рассмотрим это на простом примере.<br>У нас есть следующий HTML и Css:</p>
+              <pre><code class="language-html">&lt;img class="img img--cut" src="image-300x300.jpg"
+  width="300" height="200" alt="Image…"></code></pre>
+              <pre><code class="language-css">.img--cut {
+  object-fit: cover;
+  object-position: bottom;
+}
+</code></pre>
+              <p>Давайте разбираться:</p>
+              <ul>
+                <li>наша картинка имеет исходный размер 300*300 пикселей, но в HTML указано, что она может занимать высоту 200 пикселей, при этом ее ширина задана в 300 пикселей.</li>
+                <li>в css стилях <i class='highlight-text'>object-fit:cover</i> указывает, что изображение должно быть растянуто по всей области элемента <i class='highlight-text'>img</i> так, чтобы не осталось свободного места.</li>
+                <li>а свойство <i class='highlight-text'>object-position:bottom</i> указывает, что при этом изображение должно выравниваться по нижнему краю элемента <i class='highlight-text'>img</i></li>
+              </ul>
+              <h2 class="article-body__subtitle">Значения свойства object-fit</h2>
+              <p>Свойство <i class='highlight-text'>object-fit</i> указывает как именно нужно размещать встроенный медиа-контент в области размеры которой заданы свойствами в Css или HTML.</p>
+              <div class="article-body__img article-body__img--center"><img src="assets/img/articles/2020-02-17/example-02.jpg" alt="example"><span><i>Значения object-fit применяются к картинке размером 150*150 пикселей.</i></span></div>
+              <p>Это очень похоже на то, как мы применяем свойство <i class='highlight-text'>background-size</i> для того, чтобы задать расположение фона элемента.</p>
+              <p>Вот варианты значений для свойства <i class='highlight-text'>object-fit</i>:</p>
+              <ul>
+                <li><i class='highlight-text'>fill (default)</i> - изображение заполняет всю выделенную область, при этом изображение может быть искажено, но не обрезано</li>
+                <li><i class='highlight-text'>contain</i> - изображение не всегда заполняет всю выделенную область, контент не обрезается и не искажается и отображается полностью</li>
+                <li><i class='highlight-text'>scale-down</i> - то же самое, что и свойство <i class='highlight-text'>contain</i>, но изображение никогда не будет увеличено больше. чем его реальный размер</li>
+                <li><i class='highlight-text'>cover</i> - заполняет всё выделенное пространство не оставляя свободного места, не искажая контент, только обрезая его</li>
+                <li><i class='highlight-text'>none</i> - сохраняет оригинальный размер и соотношение сторон, иногда обрезает изображение. иногда оставляет свободное пространство</li>
+              </ul>
+              <p>На практике чаще всего применяется значение <i class='highlight-text'>object-fit: cover</i>.</p>
+              <h2 class="article-body__subtitle">Значения свойства object-position</h2>
+              <p>Свойство <i class='highlight-text'>object-position</i> определяет относительно чего будет позиционироваться изображение при применении свойства <i class='highlight-text'>object-fit</i>. Оно имеет те-же значения, что и свойство <i class='highlight-text'>background-size</i>.</p>
+              <div class="article-body__img article-body__img--center"><img src="assets/img/articles/2020-02-17/example-03.jpg" alt="example"><span><i>Варианты значений для свойства object-position.</i></span></div>
+              <p>Давайте рассмотрим значения с примеров:</p>
+              <ul>
+                <li><i class='highlight-text'>50% 50% (default)</i> - располагает изображение по центру контейнера</li>
+                <li><i class='highlight-text'>0 0</i> - располагает изображение в верхнем левом углу</li>
+                <li><i class='highlight-text'>0 -50px</i> - располагает изображение со смещением 0px относительно верха контейнера и смещает его влево на 50px за пределы контейнера</li>
+                <li><i class='highlight-text'>top right</i> - располагает изображение в верхнем правом углу</li>
+                <li><i class='highlight-text'>bottom</i> - располагает относительно нижнего края. Вторым значением берется значение по умолчанию, то есть <i class='highlight-text'>center</i></li>
+              </ul>
+              <h2 class="article-body__subtitle">Использование на практике</h2>
+              <p>Оба свойства очень полезны для избежание искажений картинки, когда на сервере содержаться картинки с разным соотношением сторон и разных размеров.</p>
+              <p>Свойство <i class='highlight-text'>object-fit</i> для тега <i class='highlight-text'>video</i> работает очень хорошо, что может очень пригодиться при использовании видео для фона на сайте. К сожалению для <i class='highlight-text'>iframe</i> оно не работает.</p>
+              <h2 class="article-body__subtitle">Поддержка браузерами</h2>
+              <p>Поскольку Edge был обновлен и теперь работает на движке Chromium, на данный момент только Internet Explorer 11 не поддерживает эти свойства.</p>
+              <p>На момент написания этой статьи, Internet Explorer все еще имеет существенную долю пользователей в некоторых странах (например здесь, в Чешской Республике), поэтому необходимо предусмотреть запасной вариант кода.</p>
+              <p><a href="https://caniuse.com/#feat=object-fit" target="_blank" rel="nofollow noopener noreferrer">caniuse.com/object-fit</a></p>
+              <h2 class="article-body__subtitle">Как решать проблемы с поддержкой свойств в Internet Explorer</h2>
+              <ol>
+                <li>Вместо использования <i class='highlight-text'>object-fit/object-position</i> для объекта, используйте изображение в качестве фона и примените к нему <i class='highlight-text'>background-size/background-position</i>. В качестве альтернативного варианта можн использвать свойства трансформации в сочетании с абсолютным позиционированием (<a href="https://stackoverflow.com/questions/37792720/ie-and-edge-fix-for-object-fit-cover/47450998#47450998" target="_blank" rel="nofollow noopener noreferrer">решение на StackOverflow</a>)</li>
+                <li>Для IE11 можно использовать полифил <a href="https://github.com/fregante/object-fit-images" target="_blank" rel="nofollow noopener noreferrer">fregante/object-fit-images</a>. Но я не очень рекомендую использовать этот вариант, потому что это замедлит рендеринг в итак не самом быстром браузере.</li>
+                <li>Определять браузеры, которые не поддерживают наши свойства (например с помощью библиотеки Modernizr) и применять к ним отдельный вариант кода. Например <a href="https://stackoverflow.com/questions/37792720/ie-and-edge-fix-for-object-fit-cover/37792830#37792830" target="_blank" rel="nofollow noopener noreferrer">на StackOverflow</a> есть решение, в котором предлагают изменять тег <i class='highlight-text'>img</i> на <i class='highlight-text'>svg</i> и решать проблему адаптации уже с ним.</li>
+              </ol>
+            </div>
+            <!--end article__body-->
+            <!--begin article__footer-->
+            <footer class="article__footer article-footer">
+              <h3 class="article-footer__title">Больше статей тут</h3>
+              <div class="article-footer__links"><a class="article-footer__link article-footer__link--xaaser" href="blog.html">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#blog"></use>
+                  </svg></a><a class="article-footer__link article-footer__link--telegram" href="https://t.me/vitaliiborodulin" target="_blank" rel="nofollow noopener noreferrer">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#telegram"></use>
+                  </svg></a><a class="article-footer__link article-footer__link--rss" href="http://xaaser2006.ru/rss.xml" target="_blank" rel="nofollow noopener noreferrer">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#rss"></use>
+                  </svg></a></div>
+            </footer>
+            <!--end article__footer-->
+          </article>
+        </div>
+      </div>
+      <!--end content-->
+    </div>
+    <script src="assets/js/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
