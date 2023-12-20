@@ -1,7 +1,5 @@
 ﻿# My portfolio site
 
-Author: <a href="http://xaaser2006.ru" target="_blank">Xaaser2006</a>
-
 ## Technologies:
 * Gulp 4.0
 * Pug(Jade)
